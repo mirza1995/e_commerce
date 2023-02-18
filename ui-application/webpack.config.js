@@ -17,11 +17,11 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.scss$/i,
+                test: /\.css$/i,
                 use: [
                     "style-loader", // 3. Inject styles into DOM
                     "css-loader", // 2. Turns css into commonjs
-                    "sass-loader" // 1. Turns sass into css
+                    "postcss-loader" // 1. post css with preprocessing
                 ],
             },
         ]
